@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de reserva de alojamientos</title>
+    <!-- estilos css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- fondo de skyline con logo superpuesto -->
+        <div class="headSkyline">
+            <img src="./assets/logo.png" class="overlayLogo" >
+        </div>
+        <nav class="navMenu">
+            <!-- menú de navegación -->
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./contactos.html">Contactanos</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filtroSuperior"> 
+            <!--fechas y buscar arriba-->
+            <p>Fecha in:</p>
+            <input type="date" name="fechain" id="fechain">
+            <p>Fecha out:</p>
+            <input type="date" name="fechaout" id="fechaout">
+            <p>Pasajeros:</p>
+            <input type="number" class="pasajerosInput" name="visit" id="visit">
+            <button>Buscar</button>
+        </section>
+        <section class="filtroBotones"> 
+            <!--filtros botón-->
+            <p>Filtros:</p>
+            <button>Filtro 1</button>
+            <button>Filtro 2</button>
+            <button>Filtro 3</button>
+        </section>
+        <section class="propiedades"> 
+            <!--fotos y texto por propiedad-->
+            <article>
+                <a href="propiedad.html"><img src="./assets/aloj_a_1.jpg" width ="300px"></a>
+                <p><a href="propiedad.html" class="tituloProp">Hermoso departamento con vista al lago</a></p>
+                <p class="descripcionPropiedad">Ubicado en un entorno de ensueño, este departamento de dos ambientes ofrece una vista privilegiada al majestuoso lago Nahuel Huapi. El living, amplio y luminoso, cuenta con un cómodo sofá cama, ideal para visitas. El comedor, perfectamente integrado, brinda un espacio acogedor para disfrutar de cada comida. La habitación principal, con grandes ventanales, permite despertar cada día con una panorámica inigualable del lago. El baño completo, moderno y funcional, complementa esta propuesta ideal para quienes buscan confort y naturaleza en un mismo lugar.</p>
+            </article>
+            <article>
+                <a href="propiedad.html"><img src="./assets/aloj_b_1.jpg" width ="300px"></a>
+                <p><a href="propiedad.html" class="tituloProp">Título propiedad 2</a></p>
+                <p class="descripcionPropiedad">Descripción de propiedad 2 con texto simulado Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo volutpat nibh vel porttitor. Nulla ac laoreet ex. Integer tempor arcu sit amet urna fringilla blandit. Maecenas placerat a sapien id iaculis.</p>
+            </article>
+            <article>
+                <a href="propiedad.html"><img src="./Assets/aloj_c_1.jpg" width ="300px"></a>
+                <p><a href="propiedad.html" class="tituloProp">Título propiedad 3</a></p>
+                <p class="descripcionPropiedad">Descripción de propiedad 3 con texto simulado Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo volutpat nibh vel porttitor. Nulla ac laoreet ex. Integer tempor arcu sit amet urna fringilla blandit. Maecenas placerat a sapien id iaculis.</p>
+            </article>
+        </section>
+     </main>
+     <footer>
+        <section class="piePagina"> 
+            <!-- footer-->
+            <p> <a href="./terms.html">Términos y condiciones</a> </p>
+            <p> <a href="./lang.html">Idioma</a> </p>
+        </section>
+    </footer>
+</body>

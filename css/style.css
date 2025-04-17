@@ -1,0 +1,147 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: "Lato", sans-serif;
+
+}
+
+body {
+    background-color: #d0d3cd;
+}
+
+button {
+    /*código redondear todos los botones*/
+    padding: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.headSkyline {
+    background-image: url('../assets/skyline.jpg');
+    background-size: contain; 
+    position: relative;
+    height: 100px;
+}
+
+.overlayLogo {
+    padding: 10px;
+    max-height: 100%;
+  }
+
+.navMenu {
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}
+
+.navMenu a {
+    color:#2f3e46;
+}
+
+.navMenu a:hover {
+    text-decoration: none;
+}
+
+.filtroSuperior {
+    color:#354f52;
+}
+
+.filtroSuperior button {
+    color:#354f52;
+}
+
+.pasajerosInput {
+    width: 50px;
+}
+
+.filtroBotones {
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    color:#52796f;
+}
+
+.filtroBotones button {
+    color:#52796f;
+}
+
+.propiedades article {
+    padding-top: 20px;
+}
+
+.tituloProp {
+   color: #2f3e46;
+   font-weight: bold;
+   font-size: larger;
+}
+
+.descripcionPropiedad {
+    color: #354f52;
+}
+
+.piePagina{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.piePagina a {
+    color:#2f3e46;
+}
+
+.piePagina a:hover {
+    text-decoration: none;
+}
+
+.fotoPrincipal {
+    color: #354f52;   
+    padding-bottom: 20px; 
+}
+
+.fotoSecundaria {
+    color: #354f52;  
+    padding-bottom: 20px; 
+}
+
+h1 {
+    color: #2f3e46;
+    font-weight: bold;
+}
+
+.features {
+    color: #354f52;  
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+.contactGeneral {
+    color: #354f52;  
+    padding-bottom: 20px; 
+}
+
+.contactTexto{
+    color: #354f52;  
+    padding-bottom: 20px; 
+}
+
+
+.msgText{
+    resize: none;
+}
+
+.descripcionContacto{
+    color: #354f52;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*
+
+  paleta oscuro a claro:
+  #2f3e46
+  #354f52
+  #52796f
+  #84a98c
+  #d0d3cd
+
+*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web de reserva de alojamientos</title>
+        <!-- estilos css-->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+         <!-- fondo de skyline con logo superpuesto -->
+         <div class="headSkyline">
+            <img src="./assets/logo.png" class="overlayLogo" >
+        </div>
+        <nav class="navMenu">
+            <!-- menú de navegación -->
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./contactos.html">Contactanos</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulario de Contacto</h1>
+        <p class="descripcionContacto">Para brindarte una atención personalizada, te invitamos a completar nuestro formulario de contacto con tus datos y preferencias. Nuestro equipo revisará tu solicitud y te responderá a la brevedad. Tu consulta es importante para nosotros, y estamos comprometidos en ofrecerte una experiencia sin complicaciones. No dudes en escribirnos, estaremos encantados de asesorarte. ¡Estamos listos para ayudarte!</p>
+        <form action="/submit" method="post">
+            <section class="contactGeneral"> 
+                <!-- componentes generales del form-->
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" name="nombre" id="nombre">
+                
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="text" name="telefono" id="telefono">
+                
+                <input type="radio"> 
+                <label for="politica">Sí acepto la política de privacidad</label>
+            </section>
+            <section class="contactTexto"> 
+                <!-- caja principal de llenado-->
+                <label for="msg">Mensaje:</label>
+                <textarea name="msgText" id="msgText>" class="msgText" cols="40" rows="5" ></textarea>
+            </section>
+            <button>Enviar comentarios </button>
+        </form>
+    </main>    
+    <footer>
+        <section class="piePagina"> 
+            <!-- footer-->
+            <p> <a href="./terms.html">Términos y condiciones</a> </p>
+            <p> <a href="./lang.html">Idioma</a> </p>
+        </section>
+    </footer>
+</body>
