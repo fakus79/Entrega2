@@ -135,6 +135,31 @@ h1 {
     padding-bottom: 20px;
 }
 
+.navbar__modif-JUS {
+    justify-content: right;
+}
+
+.navbar__modif-BK {
+    background-color: aqua;
+}
+
+.navbar__modif-align {
+    align-items: center;
+}
+
+.navbar__modif-GR {
+    flex-grow: 0;
+}
+
+/* arriba de tamaño móviles */
+
+@media (min-width: 576px) {
+
+    .navbar__modif-JUS {
+        justify-content: space-evenly;
+    }
+}
+
 /*
 
   paleta oscuro a claro:
