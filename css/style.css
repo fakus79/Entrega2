@@ -1,49 +1,66 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
-   font-family: "Lato", sans-serif;
-
+    /*reset de estilos y estilos generales*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Lato", sans-serif;
+  /*  border: solid 1px blue;*/
 }
 
 body {
-    background-color: #d0d3cd;
+    background-color:#F8F9FA;
 }
 
 button {
-    /*código redondear todos los botones*/
+    /*redondear todos los botones*/
     padding: 5px;
     border-radius: 12px;
     text-align: center;
 }
 
+input[type="date"] {
+    /*espaciar y achicar todos los input de fecha*/
+    width: 120px;
+    margin-right: 20px;
+
+}
+
 .headSkyline {
+    /*header con logo*/
     background-image: url('../assets/skyline.jpg');
     background-size: contain; 
     position: relative;
     height: 100px;
 }
-
+ 
 .overlayLogo {
+    /*header con logo*/
     padding: 10px;
     max-height: 100%;
   }
 
-.navMenu {
-    padding-top: 20px;
-    padding-bottom: 20px;    
+.navbar__modif-JUS {
+    /*justificación de la navbar a la derecha si está achicado*/
+    justify-content: right;
+    padding: 0rem 0rem ;
+    width: -webkit-fill-available;
 }
 
-.navMenu a {
-    color:#2f3e46;
+.navbar__modif-ALIGN {
+    /*centrado vertical en la navbar*/
+    align-items: center;
 }
 
-.navMenu a:hover {
-    text-decoration: none;
+.navbar__modif-GR {
+    /*muestra la navbar centrado si está expandido*/
+    flex-grow: 0;
 }
 
 .filtroSuperior {
-    color:#354f52;
+    /*contenedor de fechas pasajeros y botón buscar*/
+    color:#354f52;    
+    align-items: center;
+    flex-wrap: wrap
 }
 
 .filtroSuperior button {
@@ -51,7 +68,36 @@ button {
 }
 
 .pasajerosInput {
+    /*espaciar y achicar los input de pasajeros*/
     width: 50px;
+    margin-right: 30px;
+}
+
+.filtroSuperior {
+    color:#354f52;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.filtrosup__fechas{
+    display: flex;
+}
+
+.filtrosup__otro{
+    /*alineación y justificado de pasajeros y botón buscar*/
+    display: flex;
+    width: -webkit-fill-available;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.filtrosup__otro-persBusc{
+    /*alineación y justificado de pasajeros y botón buscar*/
+    flex:1;
+    justify-content: center;
+    display: flex;
 }
 
 .filtroBotones {
@@ -135,28 +181,23 @@ h1 {
     padding-bottom: 20px;
 }
 
-.navbar__modif-JUS {
-    justify-content: right;
-}
 
-.navbar__modif-BK {
-    background-color: aqua;
-}
 
-.navbar__modif-align {
-    align-items: center;
-}
 
-.navbar__modif-GR {
-    flex-grow: 0;
-}
-
-/* arriba de tamaño móviles */
-
-@media (min-width: 576px) {
+@media (min-width: 990px) {
+    /*cambios necesarios para DESKTOP*/
 
     .navbar__modif-JUS {
         justify-content: space-evenly;
+    }
+    
+    .filtroSuperior{
+       flex-wrap: nowrap;
+    
+    }
+    .filtrosup__otro{
+        display: flex;
+        width: auto;
     }
 }
 
