@@ -106,10 +106,19 @@ input[type="date"] {
     padding-top: 20px;
     padding-bottom: 20px;    
     color:#52796f;
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+.filtroBotones__labelFiltro{
+    align-content: center;
+    display: none;
+}
 .filtroBotones button {
     color:#52796f;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .propiedades article {
@@ -184,6 +193,16 @@ h1 {
 
 
 
+@media (min-width: 600px) {
+    /*cambios necesarios para TABLETS Y DESKTOP*/
+
+    .filtroBotones__labelFiltro{
+        /*muestro la label de FILTRO en los botones*/
+        display:block;
+    }
+}
+
+
 @media (min-width: 990px) {
     /*cambios necesarios para DESKTOP*/
 
@@ -199,6 +218,7 @@ h1 {
         display: flex;
         width: auto;
     }
+
 }
 
 /*
