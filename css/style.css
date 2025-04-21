@@ -26,6 +26,12 @@ input[type="date"] {
 
 }
 
+input[type="text"] {
+    width: 100%;
+    margin-right: 20px;
+
+}
+
 .headSkyline {
     /*header con logo*/
     background-image: url('../assets/skyline.jpg');
@@ -177,11 +183,6 @@ h1 {
 
 }
 
-.contactGeneral {
-    color: #354f52;  
-    padding-bottom: 20px; 
-}
-
 .contactTexto{
     color: #354f52;  
     padding-bottom: 20px; 
@@ -235,6 +236,50 @@ h1 {
 .galeria{
     display: inline;
 }
+
+.msgText{
+    width: 100%;
+}
+
+.container_contacto {  
+    color: #354f52; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 0.1fr);
+    grid-auto-flow: row;
+    grid-template-areas:
+      "txt_label1"
+      "inp_name"
+      "txt_label2"    
+      "inp_email" 
+      "txt_label3" 
+      "imp_tel"
+      "txt_label4"
+      "area_msg"
+      "txt_pol"
+      "bot_send";
+  }
+  
+  .txt_label1 { grid-area: txt_label1; }
+  
+  .txt_label2 { grid-area: txt_label2; }
+  
+  .txt_label3 { grid-area: txt_label3; }
+  
+  .txt_pol { grid-area: txt_pol; }
+  
+  .inp_name { grid-area: inp_name; }
+  
+  .inp_email { grid-area: inp_email; }
+  
+  .imp_tel { grid-area: imp_tel; }
+  
+  .area_msg { grid-area: area_msg; }
+
+  .txt_label4 { grid-area: txt_label4; }
+  
+  .bot_send { grid-area: bot_send; padding-top: 20px }
+    
 
 
 @media (min-width: 600px) {
@@ -290,6 +335,7 @@ h1 {
 }
 
 
+
 @media (min-width: 990px) {
     /*cambios necesarios para DESKTOP*/
 
@@ -311,6 +357,34 @@ h1 {
         margin-left: 10px;
         margin-right: 10px;
         font-size: medium;
+    }
+
+    
+    .container_contacto {  
+        color: #354f52;  
+        padding: 10px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "txt_label1 inp_name txt_label4"
+        "txt_label2 inp_email area_msg"
+        "txt_label3 imp_tel area_msg"
+        "txt_pol txt_pol bot_send";
+    } 
+
+    .area_msg { 
+        padding-left: 20px
+    }
+
+    .txt_label4 { 
+        padding-left: 20px
+    }
+
+    .bot_send{ 
+        padding-left: 20px
     }
 
 }
